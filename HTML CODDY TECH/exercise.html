@@ -205,6 +205,52 @@ Product - Laptop
 <p>Upload Progress:<progress value="50" max="100"> 50%</progress></p>
 <p>Download Speed:<meter value="60" min="0" max="100">60%</meter> </p>
         
+<!--Challenge 25. fieldset and legend tag -->
+<fieldset> 
+    <legend>Address <br/></legend> 
+ 
+     <label for="street">Street:</label><br>
+     <input type="text" id="street" name="street" /><br />
+
+     <label for="city">City:</label><br>
+     <input type="text" id="city" name="city" /><br />
+
+     <label for="zip">ZIP Code:</label><br>
+     <input type="text" id="zip" name="zip" /><br />
+</fieldset>
+
+<!--Challenge 26. DATALIS AND OPTION TAG-->
+<form>
+    <label for="days">Days are:</label>
+    <input type="text" name="days" id="days">
+
+    <datalist id="days">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+    </datalist>
+</form>
+
+<!--Challenge 27. Create an HTML form for ordering a pizza with a choice of pizza toppings. Allow the user to select multiple toppings. 
+
+Toppings for options are --->
+<form>
+    <label for="pizza-toppings">Choose your pizza toppings: </label>
+    <input type="text" id="pizza-toppings" list="toppings" multiple>
+
+    <datalist id="toppings">
+      <option value="Pepperoni">Pepperoni</option>
+      <option value="Mushrooms">Mushrooms</option>
+      <option value="Olives">Olives</option>
+      <option value="Onions">Onions</option>
+      <option value="Bell Peppers">Bell Peppers</option>
+      <option value="Sausage">Sausage</option>
+    </datalist>
+</form>
 
 
 
