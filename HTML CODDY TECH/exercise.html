@@ -252,8 +252,61 @@ Toppings for options are --->
     </datalist>
 </form>
 
+<!--Challenge 28. MARK TAG-->
+<p>What is your challenge? <mark>Your challenge is to mark  the  punchline! </mark></p>
 
+<!--Challenge 29. Create an HTML document with the necessary structure.
+Inside the <body>, add a heading with the text "Programming Languages Popularity".
+Create a <details> element that provides information about a programming language. Use a <summary> element to provide a clickable title for the details section. The summary should say "JavaScript."
+Inside the JavaScript details section, add the following content:
+An abbreviation for "ECMAScript" using the <abbr> element.
+A progress bar indicating the popularity of JavaScript (e.g., 70%).
+A meter element to show the compatibility of JavaScript across browsers (e.g., 90%).
+Highlight (using the <mark> element) the keyword "asynchronous" in the description.-->
 
+    <h1>Programming Languages Popularity</h1>
+
+        <details>
+            <summary>JavaScript</summary>
+            <p><abbr title="ISSSS">ECMAScript</abbr> <br><mark>asynchronous</mark></p>
+            <p>Popularity: <progress value="70" min="0" max="100">70%</progress></p>
+            <p>Compatibility: <meter value="90" min="0" max="100">90%</meter></p>
+        </details>
+
+<!--Challenge 30.Create an HTML form that allows users to input the name of their favorite movie and rate it on a scale of 1 to 5.
+Employ a <fieldset> element to corral your form elements and keep them in line, just like a director wrangling actors on a movie set. 🎬
+Add a <legend> element within the fieldset with the text "Rate Your Favorite Movie."
+Inside the fieldset, create a text input field where users can enter the movie name.
+Make your users feel like they're at a red carpet event by introducing a slider input (use <input type="range">) for rating movies on a scale of 1 to 5. It's like being a judge at the Oscars! 🏆
+Don't forgot to add label tags for text of input tags as you do forgot semicolons for your code.
+Use a <datalist> element to provide predefined movie suggestions. Include at least three movie titles as <option> elements within the datalist.
+Add a <progress> element to visually represent the user's rating as a percentage. --> 
+    
+    <form>
+        <fieldset>
+            <legend>Rate ypur favorite  movie</legend>
+
+            <label for="movie-name">Movie name:</label>
+            <input type="text" id="movie-name" name="movie-name" list="suggestions" placeholder="Enter movie name">
+            <datalist id="movie-name">
+                <option value="Inception"></option>
+                <option value="The Matrix"></option>
+                <option value="Interstellar"></option>
+            </datalist>
+            <br>
+
+            <!--Rating Slider-->
+            <label for="rating">Rate the movie (1 to 5):</label>
+            <input type="range" id="rating" name="rating" min="1" max="5" value="2">
+            <br>
+
+            <!--Rating Progress-->
+            <label for="progress">Parting progress:</label>
+            <progress id="progress" value="3" max="5"></progress>
+            <br>
+        
+        </fieldset>
+    </form>
 
 </body>
 </html>
