@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHALLENGES BY CODDYTECH</title>
+</head><!--  -->
+<body>
+    
+ <!-- 💻🪄I've committed to completing all HTML challenges on CoddyTech to strengthen my skills and build a solid foundation for future frontend projects.-->   
+
+<!--Challenge 1. To create your first website type anything between the <p></p> tags and run the code! -->
+<p>Hello World!</p>
+
+<!--Challenge 2. Create <h1> tag with any text inside, we will get more familiar with this tag later in the course!-->
+<h1>Hi! What are you doing?</h1>
+
+<!--Challenge 3. You are given an HTML code, add to the <p> tag the attribute color with the value “blue”-->
+    <p color="blue">This is some text!</p>
+
+<!--Challenge 4. Write a paragraph with some text inside.-->
+<p>Haha! What fun is it!🤣</p>
+
+<!--Challenge 5. Write a paragraph with an id of first and add some text inside. Create another paragraph with an id of second, populate them both with some text, don't leave them empty!-->
+
+<p id="first">First</p>
+<p id="second">Second</p>
+
+<!--Challenge 6. You are given a couple of paragraphs. Write a single <h1> tag at the top with the text NASA in it. Write an <h2> tag with Management as its text for the second paragraph and an <h3> tag with the text History for the third paragraph. -->
+    <h1>NASA</h1>
+    <p>The National Aeronautics and Space Administration is an independent agency of the US federal government responsible for the civil space program, aeronautics research, and space research</p>
+    
+    <h2>Management</h2>
+    <p>The agency administration is located at NASA Headquarters in Washington, DC, and provides overall guidance and direction. Except under exceptional circumstances, NASA civil service employees are required to be US citizens.</p>
+    
+    <h3>History</h3>
+    <p>Beginning in 1946, the National Advisory Committee for Aeronautics (NACA) began experimenting with rocket planes such as the supersonic Bell X-1. In the early 1950s, there was challenge to launch an artificial satellite for the International Geophysical Year (1957–1958).</p>
+
+<!--Challenge 7.Add an image to this website using the link: https://picsum.photos/300 . Make sure to add proper alt text. Give it an id of "firstPhoto".
+
+Add another image to the website using the link: https://picsum.photos/200/300 . Add the alt text: Uneven Image. Add a width of 300 and a height of 400. Give it an id of "secondPhoto". -->
+<img src=" https://picsum.photos/300 " id="firstPhoto">
+<img src="https://picsum.photos/200/300" alt="Uneven Image" width="300" height="400" id="secondPhoto">
+
+
+<!--Challenge 8. Write a hyperlink to the webpage: "https://www.coddy.tech/".-->
+<a href="https://www.coddy.tech/"></a>
+
+
+<!--Challenge 9. Create an ordered list with at least three list items. Give each list item an id. The id should be the word "li" and a number after it. So, the first list item should have an id of "li1", the second should have an id of "li2" and so on.-->
+
+<ol>
+    <li id="li1"></li>
+    <li id="li2"></li>
+    <li id="li3"></li>
+
+</ol>
+
+
+<!--Challenge 10. Your job is to write an unordered list with at least three list items inside. The list should have an id of "firstList" each list item in this list should have a specific id. The ids should be "li1", "li2", "li3", and so on. You should also have a nested (stacked) unordered list with the id "secondList" with as many list items as you want. The list items inside this unordered list do not need to have an id.-->
+<ul id="firstList">
+    <li id="li1"></li>
+    <li id="li2"></li>
+    <li id="li3">
+        <ul id="secondList">
+            <li></li>
+        </ul>
+    </li>
+</ul>
+
+<!--Challenge 11.
+You are given two paragraphs. Make the whole text in the first paragraph bold, and the whole text in the second paragraph italic.-->
+
+
+<p> <strong>Please make me bold!</strong></p>
+        
+<p> <em>I just want to be italic!</em></p>
+
+<!--Challenge 12. Your job is to create a line on the page. That's it!-->
+
+<hr>
+
+<!--Challenge 13. You are given a paragraph. Your task is to split it into two lines using a break tag.-->
+
+<p>Split me after the period please. 
+    <br> 
+     
+     Thank you very much!</p>
+
+<!--Challenge 14. Write an input field for a user name. Give it an id of userName and the same name. Make it required and add a placeholder with the text: Enter Username...-->
+<form action="">
+    <input type="text" id="userName" name="userName" placeholder="Enter your userName..." required>
+</form>
+
+<!--Challenge 15. Write one of each of these input fields. Make their id the same as their type.-->
+
+<form action="">
+    <input type="password" id="password" name="password" placeholder="Enter your password..." required>
+    <input type="text" id="text" name="text" placeholder="Enter your text" required>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <input type="number" id="number" min="1" max="22">
+    <input type="date" id="date">
+    <input type="range" id="range" min="1" max="22">
+
+</form>
+
+  <!--Challenge 16. Write a checkbox input field to see what it is like.
+
+ Then, write three radio input fields. They should have the ids "radio1", "radio2", and "radio3". Give all three a name of "price".-->
+
+ <form>
+    <!-- Write code below this line -->
+    <input type="checkbox" id="radio1" name="price" value="11">
+    <input type="checkbox" id="radio2" name="price" value="116">
+    <input type="checkbox" id="radio3" name="price" value="112">
+</form>
+
+<!--Challenge 17. Write a textarea with 5 rows and 20 columns in the form below. -->
+<textarea id="cami" name="cami" rows="5" cols="20"></textarea>
+
+<!--Challenge 18. You are given a couple of input fields. Write an appropriate label for each one. Give the first label an id of label1, the second an id of label2, and so on, so we can check if you did it right.-->
+<form>
+    <label for="firstname" id="label1">First Name: </label>
+    <input type="text" name="fname" id="firstname" placeholder="Enter Name...">
+    
+    <label for="age" id="label2">Age: </label>
+    <input type="number" name="age" id="age" placeholder="Enter Age...">
+    
+    <label for="male" id="label3">Male: </label>
+    <input type="radio" name="male" id="male">
+    
+    <label for="female" id="label4">Female </label>
+    <input type="radio" name="female" id="female" placeholder="female">
+
+</form>
+
+
+<!--Challenge 19. Write a form, give it an action of https://coddy.tech, a method of POST, and an id of courseForm.
+
+Make sure to have at least ONE input field of type text inside the form.
+
+Then, add an input field of type submit. Give it an id of submit.-->
+<form action="https://coddy.tech" method="POST" id="courseForm">
+    
+    <input type="name" id="user" name="user" placeholder="Enter your username" required>
+    <input type="submit" id="submit"  value="submit">
+
+</form>
+
+
+
+
+</body>
+</html>
